@@ -161,9 +161,14 @@ venv\Scripts\activate      # Windows
 # Install dependencies
 pip install -r requirements.txt
 
-# Add your API key
-create a .env file:
+## 🔑 Environment Variables
+
+Create a `.env` file in the root directory and add:
+
+```env
 OPENROUTER_API_KEY=your_api_key_here
+BASE_URL=https://openrouter.ai/api/v1
+MODEL=openai/gpt-3.5-turbo
 
 # Run the app
 streamlit run streamlit_app.py
